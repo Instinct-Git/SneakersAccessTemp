@@ -32,7 +32,7 @@ def checkProxy(proxy):
 def getProductList(website):
 	if website == 'footLockerUS':
 		pageSource = downloadPage('https://www.footlocker.com/category/mens/shoes.html')
-		print(pageSource)
+		#...
 	else:
 		notif('warning', 'Website \'' + website + '\' not implemented!')
 

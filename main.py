@@ -6,11 +6,11 @@ from proxy_checker import ProxyChecker
 def notif(what, text):
 	if what == 'error':
 		print(Back.RED + Fore.WHITE + ' ' + text + ' ' + Style.RESET_ALL)
-	if what == 'warning':
+	elif what == 'warning':
 		print(Back.YELLOW + Fore.BLACK + ' ' + text + ' ' + Style.RESET_ALL)
-	if what == 'notice':
+	elif what == 'notice':
 		print(Back.AQUA + Fore.BLACK + ' ' + text + ' ' + Style.RESET_ALL)
-	if what == 'success':
+	elif what == 'success':
 		print(Back.GREEN + Fore.BLACK + ' ' + text + ' ' + Style.RESET_ALL)
 
 def downloadPage(url):
